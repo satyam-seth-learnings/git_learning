@@ -83,7 +83,7 @@ git config --global user.email "your_email@example.com"
 - Setp 6
 
 ```bash
-git config --global user.sigingkey <Key ID>
+git config --global user.signingkey <Key ID>
 ```
 
 - Setp 7
@@ -93,12 +93,6 @@ git config --global commit.gpgsign true
 ```
 
 - Setp 8
-
-```bash
-git config --global commit.gpgsign true
-```
-
-- Setp 9
 
 ```bash
 git config --global tag.gpgsign true
@@ -220,4 +214,18 @@ git branch -m master main
 git fetch origin
 git branch -u origin/main main
 git remote set-head origin -a
+```
+
+# Note -
+
+1- To see all git global configs
+
+```bash
+git config --global --list
+```
+
+2- Unset any existing git global config
+
+```bash
+git config --global --unset <config-name>
 ```
