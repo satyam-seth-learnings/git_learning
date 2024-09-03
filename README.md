@@ -48,6 +48,12 @@ cat ~/.ssh/id_ed25519.pub
 ssh -T git@github.com
 ```
 
+### verify ssh key fingerprint
+
+```bash
+ssh-keygen -lf ~/.ssh/id_ed25519.pub -E sha256
+```
+
 # GitHub GPG Setup
 
 - Step 1
